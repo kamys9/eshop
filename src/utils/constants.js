@@ -42,12 +42,12 @@ export const services = [
   },
 ]
 
-export const products_url = 'https://djangowebshop.herokuapp.com/api/products'
-// export const products_url = 'https://course-api.com/react-store-products'
+// export const products_url = 'https://djangowebshop.herokuapp.com/api/products'
+export const products_url = 'https://course-api.com/react-store-products'
 
 // https://course-api.com/react-store-products
 
-export const single_product_url = `https://djangowebshop.herokuapp.com/api/products?id=`
-// export const single_product_url = `https://course-api.com/react-store-single-product?id=`
+// export const single_product_url = `https://djangowebshop.herokuapp.com/api/products/?id=70`
+export const single_product_url = `https://course-api.com/react-store-single-product?id=`
 
 // https://course-api.com/react-store-single-product?id=

@@ -42,7 +42,7 @@ history.push('/')
     return <Error/>
   }
 
-  const {name,price,description,stock,stars,reviews,id:sku,company,images}=product
+  const {name,price,description,id:sku,images}=product
   return <Wrapper>
     <PageHero title={name} product/>
     <div className="section section-center page">
