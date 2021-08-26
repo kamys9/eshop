@@ -6,6 +6,8 @@ import Cart from './CartPage'
 import Error from './ErrorPage'
 import Checkout from './CheckoutPage'
 import PrivateRoute from './PrivateRoute'
+import SignupPage from './SignupPage'
+import LoginPage from './LoginPage'
 
 
-export {Home,Products,SingleProduct,About,Cart,Error,Checkout,PrivateRoute}
+export {Home,Products,SingleProduct,About,Cart,Error,Checkout,PrivateRoute, SignupPage, LoginPage}

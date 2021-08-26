@@ -2,7 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
 
-import { Home, SingleProduct, Cart, Checkout, Error, About, Products, PrivateRoute } from './pages'
+import { Home, SingleProduct, Cart, Checkout, Error, About, Products, PrivateRoute, SignupPage , LoginPage} from './pages'
+// import SignupPage from './pages/SignupPage';
 
 
 
@@ -13,6 +14,12 @@ function App() {
     <Navbar/>
     <Sidebar/>
     <Switch>
+    <Route exact path="/register">
+        <SignupPage />
+      </Route>
+      <Route exact path="/login">
+        <LoginPage />
+      </Route>
       <Route exact path="/">
         <Home />
       </Route>
@@ -32,6 +39,7 @@ function App() {
       <Route path="*">
         <Error />
       </Route>
+      
 
     </Switch>
     <Footer />

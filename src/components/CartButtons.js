@@ -18,9 +18,15 @@ const CartButtons = () => {
         <span className="cart-value">{total_items}</span>
       </span>
     </Link>
+    <Link to="/login"> 
     <button type="button" className="auth-btn">
       Login <FaUserPlus />
     </button>
+    </Link>
+
+    <Link to="/register" className="auth-btn2" >
+       Signup
+      </Link>
      </Wrapper>
   )
 }
@@ -76,6 +82,21 @@ const Wrapper = styled.div`
     svg {
       margin-left: 5px;
     }
+    
+  }
+  .auth-btn2 {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--clr-grey-1);
+    letter-spacing: var(--spacing);
+    svg {
+      margin-left: 5px;
+    }
+    
   }
 `
 export default CartButtons
