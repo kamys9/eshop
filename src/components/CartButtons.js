@@ -23,6 +23,11 @@ const CartButtons = () => {
       Login <FaUserPlus />
     </button>
     </Link>
+    <Link to="/logout"> 
+    <button type="button" className="auth-btn" >
+      Logout <FaUserMinus />
+    </button>
+    </Link>
 
     <Link to="/register" className="auth-btn2" >
        Signup

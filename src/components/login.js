@@ -37,7 +37,8 @@ const useStyles = makeStyles((theme) => ({
 export default function SignIn() {
 	const history = useHistory();
 	const initialFormData = Object.freeze({
-		email: '',
+		username: '',
+		email:'',
 		password: '',
 	});
 
@@ -56,7 +57,8 @@ export default function SignIn() {
 
 		axiosInstance
 			.post(`token/`, {
-				email: formData.email,
+				email:formData.email,
+				username: formData.username,
 				password: formData.password,
 			})
 			.then((res) => {
@@ -86,10 +88,10 @@ export default function SignIn() {
 						margin="normal"
 						required
 						fullWidth
-						id="email"
-						label="Email Address"
-						name="email"
-						autoComplete="email"
+						id="username"
+						label="username"
+						name="username"
+						autoComplete="username"
 						autoFocus
 						onChange={handleChange}
 					/>

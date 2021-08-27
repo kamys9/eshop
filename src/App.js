@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Navbar, Sidebar, Footer } from './components'
+import { Navbar, Sidebar, Footer, Logout } from './components'
 
-import { Home, SingleProduct, Cart, Checkout, Error, About, Products, PrivateRoute, SignupPage , LoginPage} from './pages'
+import { Home, SingleProduct, Cart, Checkout, Error, About, Products, PrivateRoute, SignupPage , LoginPage, LogoutPage} from './pages'
 // import SignupPage from './pages/SignupPage';
 
 
@@ -19,6 +19,9 @@ function App() {
       </Route>
       <Route exact path="/login">
         <LoginPage />
+      </Route>
+      <Route exact path="/logout" component={Logout}>
+        
       </Route>
       <Route exact path="/">
         <Home />
